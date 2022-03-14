@@ -35,7 +35,7 @@
         @include Alata;
         font-size: 100%;
         font-size: .8rem;
-        @include celular{
+        @include mini-celular{
             display: none;
         }
         &:hover{
@@ -155,7 +155,7 @@
         width: 100%;
         display: none;
         height: 130px;
-        @include celular{
+        @include mini-celular{
             display: flex;
             @include flex-cc;
         }

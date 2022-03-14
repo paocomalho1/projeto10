@@ -449,7 +449,7 @@
   font-size: 100%;
   font-size: 0.8rem;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 600px) {
   .secao__botao {
     display: none;
   }
@@ -554,7 +554,7 @@
   display: none;
   height: 130px;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 600px) {
   .secao__conteiner-botao {
     display: flex;
     display: flex;

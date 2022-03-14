@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Loopstudios landing page</title>
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="cabecalho__menu">
+      <img src="./assets/images/logo.svg" alt="" class="cabecalho__logo">
+      <ul class="cabecalho__itens">
+        <li class="cabecalho__item"><a href="" class="cabecalho__link hover-line">About</a></li>
+        <li class="cabecalho__item"><a href="" class="cabecalho__link hover-line">Careers</a></li>
+        <li class="cabecalho__item"><a href="" class="cabecalho__link hover-line">Events</a></li>
+        <li class="cabecalho__item"><a href="" class="cabecalho__link hover-line">Products</a></li>
+        <li class="cabecalho__item"><a href="" class="cabecalho__link hover-line">Support</a></li>
+      </ul>
+      <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg" class="cabecalho__hamburger" onclick="telaIn()"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/></g></svg>
+    </nav>
+    <div class="cabecalho__conteiner-texto">
+      <p class="cabecalho__texto">Immersive experiences that deliver</p>
+      <div class="tela">
+        <div class="tela__conteiner-logo">
+          <img src="./assets/images/logo.svg" alt="" class="tela__logo">
+          <img src="./assets/images/icon-close.svg" alt="" class="tela__x" onclick="telaOut()">
+        </div>
+        <nav class="tela__menu">
+          <ul class="tela__itens">
+            <li class="tela__item"><a href="" class="tela__link">About</a></li>
+            <li class="tela__item"><a href="" class="tela__link">Careers</a></li>
+            <li class="tela__item"><a href="" class="tela__link">Events</a></li>
+            <li class="tela__item"><a href="" class="tela__link">Products</a></li>
+            <li class="tela__item"><a href="" class="tela__link">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
+  <main class="corpo">
+    <div class="corpo__conteiner">
+      <img src="./assets/images/desktop/image-interactive.jpg" alt="" class="corpo__img">
+      <div class="corpo__conteiner-texto">
+        <h2 class="corpo__titulo">The leader in interactive VR</h2>
+        <p class="corpo__texto">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+      </div>
+    </div>
+    <section class="secao">
+      <div class="secao__conteiner-titulo">
+        <h2 class="secao__titulo">Our creations</h2>
+        <button class="secao__botao">See all</button>
+      </div>     
+        <ul class="secao__itens">
+          <li class="secao__item">
+            <h3 class="secao__item-titulo">Deep earth</h3>
+          </li>
+          <li class="secao__item">
+            <h3 class="secao__item-titulo">Night arcade</h3>
+          </li>
+          <li class="secao__item">
+            <h3 class="secao__item-titulo">Soccer team VR</h3>
+          </li>
+          <li class="secao__item">
+            <h3 class="secao__item-titulo">The grid</h3>
+          </li>
+          <li class="secao__item">
+            <h3 class="secao__item-titulo">From up above VR</h3>
+          </li>
+          <li class="secao__item">
+            <h3 class="secao__item-titulo">Pocket borealis</h3>
+          </li>
+          <li class="secao__item">
+            <h3 class="secao__item-titulo">The curiosity</h3>
+          </li>
+          <li class="secao__item">
+            <h3 class="secao__item-titulo">Make it fisheye</h3>
+          </li>
+        </ul>
+        <div class="secao__conteiner-botao">
+          <button class="secao__botao2">See all</button>
+        </div>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="rodape__conteiner-logo">
+      <img src="./assets/images/logo.svg" alt="" class="ropade__logo">
+      <ul class="rodape__itens-icone">
+        <li class="rodape__item-icone"><div class="rodape__icone" role="img" alt="Facebook"></li>
+        <li class="rodape__item-icone"><div class="rodape__icone" role="img" alt="Twitter"></li>
+        <li class="rodape__item-icone"><div class="rodape__icone" role="img" alt="Pinterest"></li>
+        <li class="rodape__item-icone"><div class="rodape__icone" role="img" alt="Instagram"></li>
+      </ul>
+      </div>
+        <div class="rodape__conteiner-menu">
+          <nav class="rodape__menu">
+            <ul class="rodape__itens">
+              <li class="rodape__item"><a href="" class="rodape__link hover-line">About</a></li>
+              <li class="rodape__item"><a href="" class="rodape__link hover-line">Careers</a></li>
+              <li class="rodape__item"><a href="" class="rodape__link hover-line">Events</a></li>
+              <li class="rodape__item"><a href="" class="rodape__link hover-line">Products</a></li>
+              <li class="rodape__item"><a href="" class="rodape__link hover-line">Support</a></li>
+            </ul>
+          </nav>
+          <ul class="rodape__itens-icone2">
+            <li class="rodape__item-icone"><div class="rodape__icone" role="img" alt="Facebook"></li>
+            <li class="rodape__item-icone"><div class="rodape__icone" role="img" alt="Twitter"></li>
+            <li class="rodape__item-icone"><div class="rodape__icone" role="img" alt="Pinterest"></li>
+            <li class="rodape__item-icone"><div class="rodape__icone" role="img" alt="Instagram"></li>
+          </ul>
+          <p class="rodape__copyright">© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+    </footer> 
+
+  <!-- 
+  About
+  Careers
+  Events
+  Products
+  Support
+
+  © 2021 Loopstudios. All rights reserved.
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+//cores
+
+$branco: hsl(0, 0%, 100%);
+$preto: hsl(0, 0%, 0%);
+$cinza-escuro: hsl(0, 0%, 55%);
+$cinza-dark: hsl(0, 0%, 41%);
+
+//fontes
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+@mixin Alata {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+
+    
+}
+@mixin Josefin-Sans {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    
+}

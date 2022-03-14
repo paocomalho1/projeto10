@@ -1,0 +1,181 @@
+@use "../utilitarios" as *;
+
+.secao{
+
+    &__conteiner-titulo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        @include celular{
+            margin-top: 20rem;
+        }
+        @include mini-celular{
+            margin-top: 10rem;
+        }
+
+
+    }
+    &__titulo{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        @include Josefin-Sans;
+        @include celular{
+            text-align: center;
+            font-size: 2.4rem;
+        }
+
+    }
+    &__botao{
+        border: $preto solid 2px;
+        padding: 0.5rem 1.5rem;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+        background-color: $branco;
+        @include Alata;
+        font-size: 100%;
+        font-size: .8rem;
+        @include celular{
+            display: none;
+        }
+        &:hover{
+            background-color: $preto;
+            color: $branco;
+            border: none;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+    }
+    &__itens{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 400px 400px;
+        grid-template-areas: 
+        "deep night soccer grid"
+        "from pocket curiosity make";
+        gap: 1rem;
+        @include mini-celular{
+            grid-template-columns: 100% !important;
+            grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px !important;
+            grid-template-areas : 
+            "deep"
+            "night"
+            "soccer"
+            "grid"
+            "from"
+            "pocket"
+            "curiosity"
+            "make" !important;
+            gap: 1rem !important;
+            
+        }
+        @include celular{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 400px 400px 400px 400px;
+            grid-template-areas: 
+            "deep night"
+            "soccer grid"
+            "from pocket"
+            "curiosity make";
+            gap: 1rem;
+            
+        }
+        @include tablet{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 400px 400px 400px 400px;
+            grid-template-areas: 
+            "deep night"
+            "soccer grid"
+            "from pocket"
+            "curiosity make";
+            gap: 1rem;
+            
+        }
+
+    }
+    &__item{
+        padding: 2rem;
+        display: flex;
+        align-items: flex-end;
+        color: $branco;
+        transition: all 300ms ease-in-out;
+        &:hover{
+            opacity: 0.5;
+            color: $branco;
+            cursor: pointer;
+        }
+        &:first-child{
+            grid-area: deep;
+            background: url(../images/desktop/image-deep-earth.jpg) no-repeat center / cover;
+
+        }
+        &:nth-child(2){
+            grid-area: night;
+            background: url(../images/desktop/image-night-arcade.jpg) no-repeat center / cover;
+        }
+        &:nth-child(3){
+            grid-area: soccer;
+            background: url(../images/desktop/image-soccer-team.jpg) no-repeat center / cover;
+        }
+        &:nth-child(4){
+            grid-area: grid;
+            background: url(../images/desktop/image-grid.jpg) no-repeat center / cover;
+        }
+        &:nth-child(5){
+            grid-area: from;
+            background: url(../images/desktop/image-from-above.jpg) no-repeat center / cover;
+        }
+        &:nth-child(6){
+            grid-area: pocket;
+            background: url(../images/desktop/image-pocket-borealis.jpg) no-repeat center / cover;
+        }
+        &:nth-child(7){
+            grid-area: curiosity;
+            background: url(../images/desktop/image-curiosity.jpg) no-repeat center / cover;
+        }
+        &:last-child{
+            grid-area: make;
+            background: url(../images/desktop/image-fisheye.jpg) no-repeat center / cover;
+        }
+
+    }
+    &__item-titulo{
+        color: inherit;
+        text-transform: uppercase;
+        @include Josefin-Sans;
+        font-size: 2rem;
+        @include celular{
+            font-size: 1.5rem;
+            width: 50%;
+        }
+
+    }
+    &__conteiner-botao{
+        width: 100%;
+        display: none;
+        height: 130px;
+        @include celular{
+            display: flex;
+            @include flex-cc;
+        }
+    }
+    &__botao2{
+        border: $preto solid 2px;
+        padding: 0.5rem 2rem;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+        background-color: $branco;
+        @include Alata;
+        font-size: 100%;
+        font-size: .8rem;
+        margin-top: 2rem;
+        &:hover{
+            background-color: $preto;
+            color: $branco;
+            border: none;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+    }
+}

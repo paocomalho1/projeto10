@@ -1,0 +1,134 @@
+@use "../utilitarios" as *;
+
+.rodape{
+    background-color: $preto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @include celular{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        
+    }
+
+    &__conteiner-logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include celular{
+            flex-direction: column;
+            margin-bottom: 3rem;
+        }
+
+    }
+    &__logo{
+
+    }
+    &__itens-icone{
+        display: flex;
+        align-items: center;
+        @include celular{
+            display: none;
+        }
+
+    }
+    &__item-icone{
+        margin-right: 0.75rem;
+        position: relative;
+        &:first-child{
+            background: url(../images/icon-facebook.svg) no-repeat center / cover;
+        }
+        &:nth-child(2){
+            background: url(../images/icon-twitter.svg) no-repeat center / cover;
+        }
+        &:nth-child(3){
+            background: url(../images/icon-pinterest.svg) no-repeat center / cover;
+        }
+        &:last-child{
+            background: url(../images/icon-instagram.svg) no-repeat center / cover;
+            margin-right: 0rem;
+        }
+
+    }
+    &__icone{
+        height: 24px;
+        width: 24px;
+        &::after{
+            content: "";
+            height: 2px;
+            position: absolute;
+            left: 10%;
+            right: 10%;
+            background-color: $branco;
+            top: 30px;
+            transition: all 300ms ease-in-out;
+            opacity: 0;
+        }
+        &:hover{
+            cursor: pointer;
+            &::after{
+                opacity: 1;
+            }
+    
+        }
+
+    }
+    &__conteiner-menu{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include celular{
+            flex-direction: column;
+        }
+
+    }
+    &__menu{
+
+    }
+    &__itens{
+        display: flex;
+        @include celular{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+    &__item{
+        margin-right: 2rem;
+        position: relative;
+        @include celular{
+            margin-right: 0rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        &:last-child{
+            margin-right: 0rem;
+        }
+
+    }
+    &__link{
+        text-decoration: none;
+        color: $branco;
+        @include Alata;
+
+    }
+    &__itens-icone2{
+        display: none;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        @include celular{
+            display: flex;
+            align-items: center;
+        }
+
+    }
+    &__copyright{
+        @include Alata;
+        color: $cinza-dark;
+
+
+    }
+}

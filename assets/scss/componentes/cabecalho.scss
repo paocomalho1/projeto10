@@ -1,0 +1,80 @@
+@use "../utilitarios" as *;
+
+.cabecalho{
+    background: url(../images/desktop/image-hero.jpg) no-repeat center / cover;
+    height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+    }
+    &__logo{
+
+    }
+    &__itens{
+        display: flex;
+        align-items: center;
+        @include celular{
+            display: none;
+        }
+
+    }
+    &__item{
+        margin-right: 2rem;
+        position: relative;
+        &:last-child{
+            margin-right: 0rem;
+        }
+
+    }
+    &__link{
+        @include Alata;
+        text-decoration: none;
+        color: $branco;
+    }
+    &__hamburger{
+        display: none;
+        &:hover{
+            cursor: pointer;
+        }
+        @include celular{
+            display: block;
+        }
+    }
+    &__conteiner-texto{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        @include mini-celular{
+            justify-content: center;
+        }
+
+    }
+    &__texto{
+        font-size: 4.0rem;
+        text-transform: uppercase;
+        @include Josefin-Sans;
+        color: $branco;
+        padding: 1.5rem;
+        width: 50%;
+        border: $branco solid 2px;
+        @include mini-celular{
+            width: 100%;
+            font-size: 2.4rem;
+        }
+        @include celular{
+            font-size: 2.4rem;
+        }
+        @include tablet{
+            font-size: 3.5rem;
+        }
+
+    }
+}
